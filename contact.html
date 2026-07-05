@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Uva Book Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>📚 Uva Bookshop</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="books.html">Books</a>
+            <a href="stationery.html">Stationery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <button id="theme-toggle">🌙 Dark Mode</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 20px;">Contact Us</h2>
+        <form onsubmit="alert('Message Sent Successfully!'); return false;">
+            <label>Your Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Message</label>
+            <textarea rows="5" placeholder="Enter your message here..." required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Uva Book Shop. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
