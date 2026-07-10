@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Book Nook | Special Offers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">📚 The Book Nook</div>
+        <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="offers.html" class="active">Special Offers</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="offers-container">
+        <h2>🔥 Hot Holiday Sales!</h2>
+        <p class="section-sub">Huge discounts on your favorite books</p>
+        
+        <div class="book-grid">
+            <div class="book-card">
+                <span class="badge">SALE</span>
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=400&q=80" alt="Book 3">
+                </div>
+                <h3>The Great Gatsby</h3>
+                <p class="author">by F. Scott Fitzgerald</p>
+                <div class="price-container">
+                    <span class="original-price">LKR 1,500</span>
+                    <span class="sale-price">LKR 1,200</span>
+                </div>
+                <button class="btn" onclick="addToCart('The Great Gatsby')"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+
+            <div class="book-card">
+                <span class="badge">SALE</span>
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1610116306796-6ebd30d77fa0?auto=format&fit=crop&w=400&q=80" alt="Book 4">
+                </div>
+                <h3>Madol Doova</h3>
+                <p class="author">by Martin Wickramasinghe</p>
+                <div class="price-container">
+                    <span class="original-price">LKR 950</span>
+                    <span class="sale-price">LKR 750</span>
+                </div>
+                <button class="btn" onclick="addToCart('Madol Doova')"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Book Nook. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
