@@ -40,14 +40,14 @@ header {
     z-index: 1000;
 }
 
-/* Logo Link එකේ Design එක */
+
 .logo-link {
-    color: white;
-    text-decoration: none;
+    color: white !important;          
+    text-decoration: none !important; 
 }
 
 .logo-link:hover {
-    color: var(--accent-color);
+    color: var(--accent-color) !important; 
 }
 
 nav {
