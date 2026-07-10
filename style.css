@@ -40,6 +40,11 @@ header {
     z-index: 1000;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+}
+
 nav a {
     color: white;
     text-decoration: none;
@@ -70,7 +75,8 @@ nav a:hover {
 .hero {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('cr-book.jpg') no-repeat center center/cover;
+  
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/cr-book.jpg') no-repeat center center/cover;
     color: white;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -143,8 +149,25 @@ footer {
 
 
 @media screen and (max-width: 768px) {
-    header { flex-direction: column; gap: 15px; text-align: center; }
-    nav { flex-wrap: wrap; justify-content: center; gap: 12px; }
-    nav a { margin-left: 0; }
-    #theme-toggle { width: 100%; }
+    header { 
+        flex-direction: column; 
+        gap: 12px; 
+        text-align: center; 
+        padding: 15px 2%;
+    }
+    nav { 
+        flex-direction: row;
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 15px; 
+    }
+    nav a { 
+        margin-left: 0; 
+        font-size: 0.95rem;
+    }
+    #theme-toggle { 
+        width: auto; 
+        margin-left: 0 !important; 
+        margin-top: 5px;
+    }
 }
